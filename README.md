@@ -7,8 +7,8 @@ The APIs will return a list of supported cities within Manitoba with their ID, n
   - Get/ City/Restaurant (array)
 - Time
   - Get/Time (array)
-- Cuisin 
-  - Get/Cuisin (array)
+- Cuisine 
+  - Get/Cuisine (array)
   
 ## Parameter
 - Location(string)

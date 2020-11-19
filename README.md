@@ -9,7 +9,7 @@ The APIs will return the list of supported city in Manitoba with their ID, name,
   - Get/OpenTime
   - Get/CloseTime
 - Cuisin 
-  - Get/Cusin
+  - Get/Cuisin
   
 ## Parameter
 - Location(string)

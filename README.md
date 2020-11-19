@@ -7,14 +7,8 @@ The APIs will return the list of supported city in Manitoba with their ID, name,
 - Time
   - Get/OpenTime
   - Get/CloseTime
-<<<<<<< HEAD
 - Location
   - Get/City/Restaurant
 - Cuisine
    - Get/city/Restaurant/{cusineName}
 
-   This a test commit.
-=======
->>>>>>> 746662fb51f443790e05dfef79d72f07d49164be
-  
-  

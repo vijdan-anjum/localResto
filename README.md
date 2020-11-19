@@ -3,13 +3,13 @@ The APIs will return a list of supported cities within Manitoba with their ID, n
 
 ## End points
 - City
-  -  Get/ City
+  - Get/ City
   - Get/ City/Restaurant
 - Time
   - Get/OpenTime
   - Get/CloseTime
 - Cuisin 
-  - Get/Cuisin
+  - Get/Cuisine
   
 ## Parameter
 - Location(string)

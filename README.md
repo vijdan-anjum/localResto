@@ -1,15 +1,18 @@
 # Supported Local Restaurant in Manitoba
-The APIs will return the list of supported cities in Manitoba with their ID, name, version and a list of local restaurants in that city. The API will also return a list of opening and closing times of these local restaurants with name of city, city ID, name of restaurant and a boolean for whether or not it is open overnight. Cuisine types will be returned with city ID, city Name, restaurant Name, version.
+The APIs will return a list of supported cities within Manitoba with their ID, name, version and the list of local restaurant (restaurant name, location). Along with that, the API can return a list of opening and closing times of restaurants with city name, city ID, restaurant name, location, and a boolean for whether or not they are open at midnight. The APIs will also return cuisine types in the city with city ID, city Name, restaurant Name, cuisine name.
 
+## End points
 - City
   -  Get/ City
   - Get/ City/Restaurant
-  - Get/City/Cuisine
 - Time
   - Get/OpenTime
   - Get/CloseTime
-- Location
-  - Get/City/Restaurant
-- Cuisine
-   - Get/City/Restaurant/{cuisineName}
+- Cuisin 
+  - Get/Cusin
+  
+## Parameter
+- Location(string)
+- cusin_name(string)
+- Id(string)
 

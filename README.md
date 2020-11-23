@@ -3,7 +3,7 @@ The API will return a list of supported cities within Manitoba with their Id, na
 ## API documentation
 Our API is a simple API, which only use get request to access the information. You can request at
 ```
-https://app.swaggerhub.com/apis/emily96/API_resto/1.0.0
+https://apis.localrestaurant.com
 ```
 
 ## End points and parameter
@@ -39,8 +39,8 @@ The API will have 3 endpoints, and the information is about the 3 endpoints with
 ### Sample request direct from browser
 The example below is the sample request directly from the brower when user want to check open and closing time of restaurant
 ```
-http://swaggerhub.com/apis/emily96/API_resto/1.0.0#/Time/json?id=Winnipeg,Manitoba,StandardTime&name=KingHeadPub&support_overnight=false
-http://swaggerhub.com/apis/emily96/API_resto/1.0.0#/Time/json?id=Winnipeg,Manitoba,StandardTime&name=KingHeadPub
+http://apis.localrestaurant.com/Time/json?id=Winnipeg,Manitoba,StandardTime&name=KingHeadPub&support_overnight=false
+http://apis.localrestaurant.com/Time/json?id=Winnipeg,Manitoba,StandardTime&name=KingHeadPub
 ```
 
 

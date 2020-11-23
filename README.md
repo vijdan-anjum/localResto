@@ -25,7 +25,7 @@ The API will have 3 endpoints, and the information is about the 3 endpoints with
   - **time**: Access the list of opening and closing times for supported restaurants. You only need to input the city's id, restaurant's name and the boolean condition (true, if looking for restaurants open at midnight).
   - **parameter**
     - id (string): id of city with specific time type. Required
-      * For example: "id":"Winnipeg, Manitoba, Standard Time"
+      * For example: "id": "Winnipeg, Manitoba, Standard Time"
     - Name (string): Name of the restaurant. Required.
     - support_overnight(boolean): Boolean to check if the restaurant will be open overnight. Optional.
 
@@ -46,7 +46,7 @@ http://apis.localrestaurant.com/Time/json?id=Winnipeg,Manitoba,StandardTime&name
 
 
 ### Sample request in JSON file
-The example below is the sample request in JSON when the user wishes to check opening and closing time of a restaurant in Winnipeg
+The example below is the sample request in JSON when the user wishes to check opening and closing time of a restaurant in Winnipeg:
 ```
 [
   {
@@ -71,8 +71,8 @@ The example below is the respose in JSON when user wishes to check opening and c
 ```
 ## Response code
 The "response" in the API will contain the response description of the resquest. There are 2 values in the response message of the API:
-- "200": Sucessful operation
-- "400": Invalid input
+- "200": Sucessful operation.
+- "400": Invalid input.
 
 ## Authors
 * Emily Nguyen

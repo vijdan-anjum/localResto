@@ -7,7 +7,7 @@ Our API is a simple API, which only uses GET requests to access the information.
 https://apis.localrestaurant.com
 ```
 
-## End points and Parameters
+## Endpoints and Parameters
 The API will have 3 endpoints, and the information is about the 3 endpoints within their parameters.
 ### City
 - **city**: returns a list of supported cities with the local restaurants.

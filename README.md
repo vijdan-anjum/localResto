@@ -75,7 +75,7 @@ The "response" in the API will contain the response description of the resquest.
 - "400": Invalid input.
 
 ## Authors
-* Emily Nguyen
-* Charina Duenas
-* Rajinder Singh
-* Mohammed Anjum
+* [Emily Nguyen](https://github.com/emily0906)
+* [Charina Duenas](https://github.com/pandorasjuicebox)
+* [Rajinder Singh](https://github.com/rajindersingh751)
+* [Mohammed Anjum](https://github.com/vijdan-anjum)

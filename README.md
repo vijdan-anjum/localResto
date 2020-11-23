@@ -40,6 +40,7 @@ The API will have 3 endpoints, and the information is about the 3 endpoints with
 The example below is the sample request directly from the brower when user want to check open and closing time of restaurant
 ```
 http://swaggerhub.com/apis/emily96/API_resto/1.0.0#/Time/json?id=Winnipeg,Manitoba,StandardTime&name=KingHeadPub&support_overnight=false
+http://swaggerhub.com/apis/emily96/API_resto/1.0.0#/Time/json?id=Winnipeg,Manitoba,StandardTime&name=KingHeadPub
 ```
 
 

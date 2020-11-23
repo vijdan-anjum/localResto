@@ -10,12 +10,12 @@ https://app.swaggerhub.com/apis/emily96/API_resto/1.0.0
 The API will have 3 endpoints, and the information is about the 3 endpoints within their parameters
 ### City
 - **city**: return a list of supported countries within the local restaurants in the city
-- **parameter**
-  - Id (int): Id of city. Required.
-  - Name(string): Name of city. Required
-  - restaurant(array) : return a list of local restaurants in supported city. Required
-  - verson(int): indicate how many copy the user want to get. Optional
-- **restaurant(array)** : return a list of local restaurants in supported city
+  - **parameter**
+    - Id (int): Id of city. Required.
+    - Name(string): Name of city. Required
+    - restaurant(array) : return a list of local restaurants in supported city. Required
+    - verson(int): indicate how many copy the user want to get. Optional
+- **city/restaurant** : return a list of local restaurants in supported city
   - **parameter**
     - Name(string): Name of restaurant
     - Location(string): Location of restaurant

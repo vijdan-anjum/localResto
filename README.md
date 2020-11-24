@@ -33,7 +33,7 @@ The API will have 3 endpoints, and the information is about the 3 endpoints with
   - **cuisine**: Access the list of cuisines of the supported city. You only need to input the cuisine name, city id, version. Required.
   - **parameter**
     - ```id (string)```: The id of the city. Required.
-      * *For example: "id":"WP"* mean Winnipeg
+      * *For example: "id":"WPG"* means Winnipeg.
     - ```Name (string)```: The name of the cuisine you want to search. Required.
     - ```version (int)```: Indicate how many copies it should return. Required.
 
@@ -64,7 +64,7 @@ The example below is the sample requestion in JSON when user want to check cuisi
 ```
 [
   {
-    "id": "WP",
+    "id": "WPG",
     "Name": "filipino cuisine"
     "version":1
   }

@@ -25,14 +25,15 @@ The API will have 3 endpoints, and the information is about the 3 endpoints with
   - **time**: Access the list of opening and closing times for supported restaurants. You only need to input the city's id, restaurant's name and the boolean condition (true, if looking for restaurants open at midnight).
   - **parameter**
     - ```id (string)```: id of city with specific time type. Required
-      * For example: "id": "Winnipeg, Manitoba, Standard Time"
+      * *For example: "id": "Winnipeg, Manitoba, Standard Time"*
     - ```Name (string)```: Name of the restaurant. Required.
     - ```support_overnight(boolean)```: Boolean to check if the restaurant will be open overnight. Optional.
 
 ### Cuisine
   - **cuisine**: Access the list of cuisines of the supported city. You only need to input the cuisine name, city id, version. Required.
   - **parameter**
-    - ```id (int)```: The id of the city. Required.
+    - ```id (string)```: The id of the city. Required.
+      * *For example: "Id":"WP"* mean Winnipeg
     - ```Name (string)```: The name of the cuisine you want to search. Required.
     - ```version (int)```: Indicate how many copy should it return. Required.
 
@@ -43,7 +44,10 @@ The example below is a sample request directly from the brower when user wishes 
 http://apis.localrestaurant.com/Time/json?id=Winnipeg,Manitoba,StandardTime&name=KingHeadPub&support_overnight=false
 http://apis.localrestaurant.com/Time/json?id=Winnipeg,Manitoba,StandardTime&name=KingHeadPub
 ```
-
+The example below is another sample request directly from the browswe when user wishes to check the cuisine in the city
+```
+http://apis.localrestaurant.com/Cuisine/json?id=WP&Name=filipinocuisine&version=1
+```
 
 ### Sample request in JSON file
 The example below is the sample request in JSON when the user wishes to check opening and closing time of a restaurant in Winnipeg:
@@ -56,7 +60,16 @@ The example below is the sample request in JSON when the user wishes to check op
   }
 ]
 ```
-
+The example below is the sample requestion in JSON when user want to check cuisine in Winnipeg
+```
+[
+  {
+    "Id": "WP",
+    "Name": "filipino cuisine"
+    "version":1
+  }
+]
+```
 ## Sample response
 The example below is the respose in JSON when user wishes to check opening and closing time of restaurants in Winnipeg:
 ```
@@ -67,6 +80,24 @@ The example below is the respose in JSON when user wishes to check opening and c
     "closing"   : "9:00 PM",
   }
   "responses": "200"
+}
+```
+The example below will be the sample response in JSON when users want to see list of restaurants in Winnipeg by the cuisine
+```
+{
+  "result":
+  {
+    [
+      "Name": "Kalan Restaurant"
+      "Location": "1449 Arlington St"
+    ],
+    [
+      "Name": "Myrna's Cafe N Catering"
+      "Location": "833 Sargent Ave"
+    ],
+    ...
+   }
+   "responses":"200"
 }
 ```
 ## Response code

@@ -12,7 +12,7 @@ The API will have three endpoints, and the information is about the three endpoi
 ### City
 - **city**: Returns a list of supported cities with the local restaurants.
   - **parameter**
-    - ```id (int)```: id of city. Required.
+    - ```id (string)```: id of city. Required.
     - ```Name(string)```: Name of city. Required
     - ```restaurant(array)``` : Returns a list of local restaurants in the supported city. Required
     - ```verson(int)```: Indicates how many copies the user want to get. Optional.

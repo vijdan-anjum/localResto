@@ -40,25 +40,25 @@ The API will have three endpoints, and the information is about the three endpoi
 
 ## Sample requests
 ### Sample request direct from browser
-The example below is a sample request directly from the browser when the user wishes to check for a list of restaurants: 
+Sample request directly from the browser when the user wishes to check for a list of restaurants: 
 ```
 http://apis.localrestaurant.com/cities/json?id=WPG&Name=Winnipeg&restaurant=[name=fion]&version=1
 http://apis.localrestaurant.com/cities/json?id=WPG&Name=Winnipeg&version=1
 http://apis.localrestaurant.com/cities/json?id=WPG&Name=Winnipeg
 ```
-The example below is a sample request directly from the browser when the user wishes to check opening and closing times of a restaurant:
+Sample request directly from the browser when the user wishes to check opening and closing times of a restaurant:
 ```
 http://apis.localrestaurant.com/Time/json?id=Winnipeg,Manitoba,StandardTime&name=KingHeadPub&support_overnight=false
 http://apis.localrestaurant.com/Time/json?id=Winnipeg,Manitoba,StandardTime&name=KingHeadPub
 ```
-The example below is another sample request directly from the browser when user wishes to check the cuisine types in a city:
+Sample request directly from the browser when user wishes to check the cuisine types in a city:
 ```
 http://apis.localrestaurant.com/Cuisine/json?id=WP&Name=filipinocuisine&version=1
 http://apis.localrestaurant.com/Cuisine/json?id=WP&Name=filipinocuisine
 ```
 
 ### Sample request in JSON file
-The example below is the sample request in JSON when the user want to check the list of restaurants in Winnipeg:
+Sample request in JSON when the user want to check the list of restaurants in Winnipeg:
 ```
 [
   {
@@ -69,7 +69,7 @@ The example below is the sample request in JSON when the user want to check the 
   }
 ]
 ```
-The example below is the sample request in JSON when the user wishes to check opening and closing times of a restaurant in Winnipeg:
+Sample request in JSON when the user wishes to check opening and closing times of a restaurant in Winnipeg:
 ```
 [
   {
@@ -79,7 +79,7 @@ The example below is the sample request in JSON when the user wishes to check op
   }
 ]
 ```
-The example below is the sample request in JSON when the user wishes to check the available cuisine types in Winnipeg:
+Sample request in JSON when the user wishes to check the available cuisine types in Winnipeg:
 ```
 [
   {
@@ -90,7 +90,7 @@ The example below is the sample request in JSON when the user wishes to check th
 ]
 ```
 ## Sample response
-The example below is the response in JSON when user want to check for a list of restaurants:
+Sample response in JSON when user want to check for a list of restaurants:
 ```
 {
   "result":
@@ -107,7 +107,7 @@ The example below is the response in JSON when user want to check for a list of 
   "responses: "200"
 }
 ```
-The example below is the response in JSON when user wishes to check opening and closing times of restaurants in Winnipeg:
+Sample response in JSON when user wishes to check opening and closing times of restaurants in Winnipeg:
 ```
 {
   "result":
@@ -118,7 +118,7 @@ The example below is the response in JSON when user wishes to check opening and 
   "responses": "200"
 }
 ```
-The example below will be the sample response in JSON when users wishes to see the list of restaurants in Winnipeg by cuisine type:
+Sample response in JSON when users wishes to see the list of restaurants in Winnipeg by cuisine type:
 ```
 {
   "result":

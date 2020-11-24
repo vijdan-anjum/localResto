@@ -38,7 +38,7 @@ The API will have three endpoints, and the information is about the three endpoi
 
 ## Sample requests
 ### Sample request direct from browser
-The example below is a sample request directlyfrom the browswe when the user wishes to check for for list of restaurant
+The example below is a sample request directly from the browser when the user wishes to check for a list of restaurants: 
 ```
 http://apis.localrestaurant.com/cities/json?id=WPG&Name=Winnipeg&restaurant=[name=fion]&version=1
 http://apis.localrestaurant.com/cities/json?id=WPG&Name=Winnipeg&version=1
@@ -56,7 +56,7 @@ http://apis.localrestaurant.com/Cuisine/json?id=WP&Name=filipinocuisine
 ```
 
 ### Sample request in JSON file
-The example below is the sample request in JSON when the user want to check list of restaurants in Winnipeg
+The example below is the sample request in JSON when the user want to check the list of restaurants in Winnipeg:
 ```
 [
   {
@@ -77,7 +77,7 @@ The example below is the sample request in JSON when the user wishes to check op
   }
 ]
 ```
-The example below is the sample requestion in JSON when user want to check cuisine in Winnipeg
+The example below is the sample request in JSON when the user wishes to check the available cuisine types in Winnipeg:
 ```
 [
   {
@@ -88,7 +88,7 @@ The example below is the sample requestion in JSON when user want to check cuisi
 ]
 ```
 ## Sample response
-The example below is the response in JSON when user want to check for list of restaurants
+The example below is the response in JSON when user want to check for a list of restaurants:
 ```
 {
   "result":
@@ -145,6 +145,6 @@ The "response" in the API will contain the response description of the resquest.
 * [Rajinder Singh](https://github.com/rajindersingh751)
 * [Mohammed Anjum](https://github.com/vijdan-anjum)
 
-## Acknowledge
+## Acknowledgements
 - [sunrise_sunset](https://sunrise-sunset.org/api)
 - [Documenting APIs](https://idratherbewriting.com/learnapidoc/pubapis_openapi_step1_openapi_object.html)

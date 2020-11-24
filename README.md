@@ -1,5 +1,5 @@
 # Supported Local Restaurants in Manitoba
-The API will return a list of supported cities within Manitoba with their id, name, version and the list of local restaurant (restaurant name, location). Along with that, the API can return a list of opening and closing times of supported restaurant with city name, restaurant name, and a boolean for whether or not they are open at midnight. The APIs will also return list of supported restaurants within the cuisine type and the city it in.
+The API will return a list of supported cities within Manitoba with the list of local restaurants (restaurant name, location). Along with that, the API can return a list of opening and closing times of supported restaurant with city name, restaurant name, and a boolean for whether or not they are open at midnight. The APIs will also return list of supported restaurants within the cuisine type and the city it in.
 
 ## API documentation
 Our API is a simple API, which only uses GET requests to access the information. You can perform the GET request at:
@@ -10,22 +10,21 @@ https://apis.localrestaurant.com
 ## Endpoints and Parameters
 The API will have three endpoints, and the information is about the three endpoints within their parameters.
 ### City
-- **city**: Returns a list of supported cities with the local restaurants.
+- **city**: Access to a list of supported cities with the local restaurants.
   - **parameter**
     - ```id (string)```: id of city. Required.
     - ```Name(string)```: Name of city. Required
-    - ```restaurant(array)``` : Returns a list of local restaurants in the supported city. Required
+    - ```restaurant(array)``` : Returns a list of local restaurants in the supported city. Optional
     - ```verson(int)```: Indicates how many copies the user want to get. Optional.
 - **city/restaurant** : Returns a list of local restaurants in supported city.
   - **parameter**
     - ```Name(string)```: Name of the restaurant.
-    - ```Location(string)```: Location of the restaurant. 
 
 ### Time
   - **time**: Access the list of opening and closing times for supported restaurants. You only need to input the city's id, restaurant's name and the boolean condition (true, if looking for restaurants open at midnight). 
   - **parameter**
     - ```id (string)```: id of city with specific time type. Required
-      * *For example: "id": "Winnipeg, Manitoba, Standard Time"*
+      * *For example: "id": "Winnipeg, Manitoba, Central Time"*
     - ```Name (string)```: Name of the restaurant. Required.
     - ```support_overnight(boolean)```: Boolean to check if the restaurant will be open overnight. Optional.
 
@@ -39,6 +38,12 @@ The API will have three endpoints, and the information is about the three endpoi
 
 ## Sample requests
 ### Sample request direct from browser
+The example below is a sample request directlyfrom the browswe when the user wishes to check for for list of restaurant
+```
+http://apis.localrestaurant.com/cities/json?id=WPG&Name=Winnipeg&restaurant=[name=fion]&version=1
+http://apis.localrestaurant.com/cities/json?id=WPG&Name=Winnipeg&version=1
+http://apis.localrestaurant.com/cities/json?id=WPG&Name=Winnipeg
+```
 The example below is a sample request directly from the browser when the user wishes to check opening and closing times of a restaurant:
 ```
 http://apis.localrestaurant.com/Time/json?id=Winnipeg,Manitoba,StandardTime&name=KingHeadPub&support_overnight=false
@@ -47,9 +52,21 @@ http://apis.localrestaurant.com/Time/json?id=Winnipeg,Manitoba,StandardTime&name
 The example below is another sample request directly from the browser when user wishes to check the cuisine types in a city:
 ```
 http://apis.localrestaurant.com/Cuisine/json?id=WP&Name=filipinocuisine&version=1
+http://apis.localrestaurant.com/Cuisine/json?id=WP&Name=filipinocuisine
 ```
 
 ### Sample request in JSON file
+The example below is the sample request in JSON when the user want to check list of restaurants in Winnipeg
+```
+[
+  {
+    "id": "WPG"
+    "Name": "Winnipeg"
+    "restaurant":["Name":"Fions"]
+     "version": 1
+  }
+]
+```
 The example below is the sample request in JSON when the user wishes to check opening and closing times of a restaurant in Winnipeg:
 ```
 [
@@ -71,7 +88,24 @@ The example below is the sample requestion in JSON when user want to check cuisi
 ]
 ```
 ## Sample response
-The example below is the respose in JSON when user wishes to check opening and closing times of restaurants in Winnipeg:
+The example below is the response in JSON when user want to check for list of restaurants
+```
+{
+  "result":
+  {
+    [
+      "Name": "Fion"
+      "Location": "1582 Regent Ave"
+    ],
+    [
+      "Name": "Fion"
+      "Location": "1180 Grant Avenue"
+    ]
+  }
+  "responses: "200"
+}
+```
+The example below is the response in JSON when user wishes to check opening and closing times of restaurants in Winnipeg:
 ```
 {
   "result":
@@ -110,3 +144,7 @@ The "response" in the API will contain the response description of the resquest.
 * [Charina Duenas](https://github.com/pandorasjuicebox)
 * [Rajinder Singh](https://github.com/rajindersingh751)
 * [Mohammed Anjum](https://github.com/vijdan-anjum)
+
+## Acknowledge
+- [sunrise_sunset](https://sunrise-sunset.org/api)
+- [Documenting APIs](https://idratherbewriting.com/learnapidoc/pubapis_openapi_step1_openapi_object.html)

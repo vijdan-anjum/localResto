@@ -65,7 +65,7 @@ The API will have three endpoints, and the information is about the three endpoi
   http://apis.localrestaurant.com/Time/json?id=Winnipeg,Manitoba,StandardTime&name=KingHeadPub&support_overnight=false
   http://apis.localrestaurant.com/Time/json?id=Winnipeg,Manitoba,StandardTime&name=KingHeadPub
   ```
-  *JSON file version -
+  * JSON file version -
   ```
   [
     {

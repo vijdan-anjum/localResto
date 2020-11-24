@@ -22,7 +22,7 @@ The API will have 3 endpoints, and the information is about the 3 endpoints with
     - ```Location(string)```: Location of the restaurant.
 
 ### Time
-  - **time**: Access the list of opening and closing times for supported restaurants. You only need to input the city's id, restaurant's name and the boolean condition (true, if looking for restaurants open at midnight).
+  - **time**: Access the list of opening and closing times for supported restaurants. You only need to input the city's id, restaurant's name and the boolean condition (true, if looking for restaurants open at midnight). 
   - **parameter**
     - ```id (string)```: id of city with specific time type. Required
       * *For example: "id": "Winnipeg, Manitoba, Standard Time"*

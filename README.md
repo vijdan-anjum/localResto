@@ -146,5 +146,5 @@ The "response" in the API will contain the response description of the resquest.
 * [Mohammed Anjum](https://github.com/vijdan-anjum)
 
 ## Acknowledgements
-- [sunrise_sunset](https://sunrise-sunset.org/api)
+- [Sunrise Sunset](https://sunrise-sunset.org/api)
 - [Documenting APIs](https://idratherbewriting.com/learnapidoc/pubapis_openapi_step1_openapi_object.html)

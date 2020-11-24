@@ -35,7 +35,7 @@ The API will have 3 endpoints, and the information is about the 3 endpoints with
     - ```id (string)```: The id of the city. Required.
       * *For example: "id":"WP"* mean Winnipeg
     - ```Name (string)```: The name of the cuisine you want to search. Required.
-    - ```version (int)```: Indicate how many copy should it return. Required.
+    - ```version (int)```: Indicate how many copies it should return. Required.
 
 ## Sample requests
 ### Sample request direct from browser
@@ -44,7 +44,7 @@ The example below is a sample request directly from the browser when the user wi
 http://apis.localrestaurant.com/Time/json?id=Winnipeg,Manitoba,StandardTime&name=KingHeadPub&support_overnight=false
 http://apis.localrestaurant.com/Time/json?id=Winnipeg,Manitoba,StandardTime&name=KingHeadPub
 ```
-The example below is another sample request directly from the browswe when user wishes to check the cuisine types in a city:
+The example below is another sample request directly from the browser when user wishes to check the cuisine types in a city:
 ```
 http://apis.localrestaurant.com/Cuisine/json?id=WP&Name=filipinocuisine&version=1
 ```

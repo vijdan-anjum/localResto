@@ -10,7 +10,7 @@ https://apis.localrestaurant.com
 ## Endpoints and Parameters
 The API will have 3 endpoints, and the information is about the 3 endpoints within their parameters.
 ### City
-- **city**: returns a list of supported cities with the local restaurants.
+- **city**: Returns a list of supported cities with the local restaurants.
   - **parameter**
     - ```id (int)```: id of city. Required.
     - ```Name(string)```: Name of city. Required
@@ -19,7 +19,7 @@ The API will have 3 endpoints, and the information is about the 3 endpoints with
 - **city/restaurant** : Returns a list of local restaurants in supported city.
   - **parameter**
     - ```Name(string)```: Name of the restaurant.
-    - ```Location(string)```: Location of the restaurant.
+    - ```Location(string)```: Location of the restaurant. 
 
 ### Time
   - **time**: Access the list of opening and closing times for supported restaurants. You only need to input the city's id, restaurant's name and the boolean condition (true, if looking for restaurants open at midnight). 

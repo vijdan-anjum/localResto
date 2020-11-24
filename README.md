@@ -12,29 +12,29 @@ The API will have 3 endpoints, and the information is about the 3 endpoints with
 ### City
 - **city**: returns a list of supported cities with the local restaurants.
   - **parameter**
-    - id (int): id of city. Required.
-    - Name(string): Name of city. Required
-    - restaurant(array) : Returns a list of local restaurants in the supported city. Required
-    - verson(int): Indicates how many copies the user want to get. Optional.
+    - ```id (int)```: id of city. Required.
+    - ```Name(string)```: Name of city. Required
+    - ```restaurant(array)``` : Returns a list of local restaurants in the supported city. Required
+    - ```verson(int)```: Indicates how many copies the user want to get. Optional.
 - **city/restaurant** : Returns a list of local restaurants in supported city.
   - **parameter**
-    - Name(string): Name of the restaurant.
-    - Location(string): Location of the restaurant.
+    - ```Name(string)```: Name of the restaurant.
+    - ```Location(string)```: Location of the restaurant.
 
 ### Time
   - **time**: Access the list of opening and closing times for supported restaurants. You only need to input the city's id, restaurant's name and the boolean condition (true, if looking for restaurants open at midnight).
   - **parameter**
-    - id (string): id of city with specific time type. Required
+    - ```id (string)```: id of city with specific time type. Required
       * For example: "id": "Winnipeg, Manitoba, Standard Time"
-    - Name (string): Name of the restaurant. Required.
-    - support_overnight(boolean): Boolean to check if the restaurant will be open overnight. Optional.
+    - ```Name (string)```: Name of the restaurant. Required.
+    - ```support_overnight(boolean)```: Boolean to check if the restaurant will be open overnight. Optional.
 
 ### Cuisine
   - **cuisine**: Access the list of cuisines of the supported city. You only need to input the cuisine name, city id, version. Required.
   - **parameter**
-    - id (int): The id of the city. Required.
-    - Name (string): The name of the cuisine you want to search. Required.
-    - version (int): Indicate how many copy should it return. Required.
+    - ```id (int)```: The id of the city. Required.
+    - ```Name (string)```: The name of the cuisine you want to search. Required.
+    - ```version (int)```: Indicate how many copy should it return. Required.
 
 ## Sample requests
 ### Sample request direct from browser

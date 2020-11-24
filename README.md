@@ -37,19 +37,20 @@ The API will have three endpoints, and the information is about the three endpoi
     - ```version (int)```: Indicate how many copies it should return. Required.
 
 ## Sample requests
-### Sample request direct from browser
-The example below is a sample request directly from the browser when the user wishes to check for a list of restaurants: 
+### Sample requests directly from the browser
+The following are a few requests:  
+1. Here the user wishes to check for a list of restaurants,
 ```
 http://apis.localrestaurant.com/cities/json?id=WPG&Name=Winnipeg&restaurant=[name=fion]&version=1
 http://apis.localrestaurant.com/cities/json?id=WPG&Name=Winnipeg&version=1
 http://apis.localrestaurant.com/cities/json?id=WPG&Name=Winnipeg
 ```
-The example below is a sample request directly from the browser when the user wishes to check opening and closing times of a restaurant:
+2. Here the user wishes to check opening and closing times of a restaurant:
 ```
 http://apis.localrestaurant.com/Time/json?id=Winnipeg,Manitoba,StandardTime&name=KingHeadPub&support_overnight=false
 http://apis.localrestaurant.com/Time/json?id=Winnipeg,Manitoba,StandardTime&name=KingHeadPub
 ```
-The example below is another sample request directly from the browser when user wishes to check the cuisine types in a city:
+3. Here the user wishes to check the cuisine types in a city:
 ```
 http://apis.localrestaurant.com/Cuisine/json?id=WP&Name=filipinocuisine&version=1
 http://apis.localrestaurant.com/Cuisine/json?id=WP&Name=filipinocuisine

@@ -54,7 +54,7 @@ The example below is the sample request in JSON when the user wishes to check op
 ```
 [
   {
-    "Id": "Winnipeg, Manitoba Standard Time",
+    "Id": "Winnipeg, Manitoba Central Time",
     "Name": "King's Head Pub",
     "support_overnight": "false"
   }
